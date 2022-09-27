@@ -29,7 +29,7 @@ export default function Home() {
             <div className={styles.usContainer}>
               <Us i='/img/justjjsimplified.png' a='JustJJ' shortDesc='The Mc of Mc-JAM, heralding a record of 5 games, JustJJ!'/>
               <Us i='/img/jay.jpeg' a='Jayy' shortDesc='The J of Mc-JAM, a man who loves 3d modelling, Jayy!'/>
-              <Us i='/img/Aaronsongaming.png' a='Aaronsongaming' shortDesc='The A of Mc-JAM, coming in with 1000 subscribers on Youtube, Aaronsongaming!'/>
+              <Us i='/img/aaronsongaming.jpg' a='Aaronsongaming' shortDesc='The A of Mc-JAM, coming in with 1000 subscribers on Youtube, Aaronsongaming!'/>
               <Us i='/img/speedberg.png' a='Speedberg' shortDesc='The M of Mc-JAM, a master of the backend, Speedberg!'/>
             </div>
 

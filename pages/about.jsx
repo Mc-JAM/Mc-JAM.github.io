@@ -18,7 +18,7 @@ export default function About() {
                     <h1>Our Roles</h1>
                     <Abouts i="/img/justjjsimplified.png" a="JJ" desc="JJ, Programmer" />
                     <Abouts i="/img/jay.jpeg" a="Jay" desc="Jay, Modeller/2d artist" />
-                    <Abouts i="/img/Aaronsongaming.png" a="Aaron" desc="Aaron, Junior Programmer" />
+                    <Abouts i="/img/aaronsongaming.jpg" a="Aaron" desc="Aaron, Junior Programmer" />
                     <Abouts i="/img/speedberg.png" a="Matthew" desc="Matthew, Programmer/2d artist" />
                     <Footer />
                 </div>

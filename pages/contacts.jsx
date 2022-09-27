@@ -19,7 +19,7 @@ export default function Contacts() {
                         <h1>Jayy</h1>
                         <Contact i="/img/jay.jpeg" a="Jayy" g='https://github.com/Jayy518'  it='https://jayy518.itch.io/'/>
                         <h1>Aaronsongaming</h1>
-                        <Contact i="/img/aaronsongaming.png" a="Aaronsongaming" g='https://github.com/AaronsonGaming' it='https://speedberg.itch.io/'/>
+                        <Contact i="/img/aaronsongaming.jpg" a="Aaronsongaming" g='https://github.com/AaronsonGaming' it='https://speedberg.itch.io/'/>
                         <h1>Speedberg</h1>
                         <Contact i="/img/speedberg.png" a="Speedberg" g='https://github.com/Speedberg' it='https://speedberg.itch.io/'/>
                     </div>
