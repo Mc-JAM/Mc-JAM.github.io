@@ -1,0 +1,12 @@
+.mainContainer {
+    background-image: linear-gradient(#ab171a, #de454b);
+    min-height: 75vh;
+    color: #eee;
+}
+
+.contactsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

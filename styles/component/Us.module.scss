@@ -1,0 +1,36 @@
+.mainContainer {
+    display: flex;
+    height: 60px;
+    margin-bottom: 10px;
+    img {
+        width: 60px;
+        border: 2px solid red;
+    }
+}
+
+.mainContainer:hover {
+    .desc {
+        width: 100%;
+    }
+}
+
+.desc {
+    background-color: #556665bb;
+    width: 0;
+    height: 100%;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: ease-in-out .3s;
+    text-align: center;
+}
+
+@media only screen and (min-width: 700px) {
+    .mainContainer {
+        height: 90px;
+        img {
+            width: 90px;
+            border: 2px solid red;
+        }
+    }
+}

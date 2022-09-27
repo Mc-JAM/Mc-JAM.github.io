@@ -1,0 +1,44 @@
+.mainContainer {
+    display: flex;
+    background-color: #556665;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    height: 10vh;
+    color: #eee;
+    a {
+        color: #eee;
+        text-decoration: none;
+        transition: ease-in-out 0.2s;
+    }
+
+    a:hover {
+        color: #aba;
+    }
+}
+
+
+
+.mainLinks {
+    display: flex;
+    margin-left: auto;
+    padding: 0;
+
+    li {
+        margin-right: 10px;
+        list-style: none;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .mainLinks {
+        li {
+            margin-right: 30px;
+        }
+    }
+    .mainContainer{
+    h1 {
+        margin-left: 30px;
+    }
+}
+}
