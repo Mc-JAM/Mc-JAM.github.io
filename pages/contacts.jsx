@@ -1,7 +1,7 @@
 import Head from "next/head"
 import Navbar from "../components/Navbar"
 import Footer from "../components/Footer"
-import styles from "../styles/Contacts.module.scss"
+import styles from "../styles/pages/Contacts.module.scss"
 import Contact from "../components/Contact"
 
 export default function Contacts() {

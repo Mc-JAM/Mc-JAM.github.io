@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar"
 import Head from "next/head"
 import Footer from "../components/Footer"
-import styles from "../styles/About.module.scss"
+import styles from "../styles/pages/About.module.scss"
 import Abouts from "../components/Abouts"
 
 export default function About() {

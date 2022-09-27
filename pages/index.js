@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.scss'
+import styles from '../styles/pages/Home.module.scss'
 import Navbar from '../components/Navbar'
 import Us from '../components/Us'
 import Footer from '../components/Footer'
@@ -11,7 +11,7 @@ export default function Home() {
       <Head>
         <title>Mc-JAM: Home</title>
         <meta name="description" content="A new small team of game developers" />
-        <link rel="icon" href="/img/McJam.jpg" />
+        <link rel="icon" href="/img/logo.jpg" />
       </Head>
 
       <main className={styles.mainContainer}>
