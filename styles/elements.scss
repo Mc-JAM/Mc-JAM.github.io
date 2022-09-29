@@ -1,0 +1,18 @@
+html, body
+{
+    color: var(--foreground);
+    background-color: var(--background);
+}
+
+a
+{
+    color: var(--foreground);
+	text-decoration: none;
+    transition: ease-in-out 0.05s;
+    border-bottom: 0px solid var(--foreground);
+
+	&:hover
+    {
+        border-bottom: 3px solid var(--foreground);
+	}
+}

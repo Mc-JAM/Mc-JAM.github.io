@@ -6,11 +6,12 @@ import { Component } from 'react'
 export default function Home() {
   return (
     <Page page="index" title="Home">
-      <div className={styles.otherContainer}>
-        <div className={styles.sloganContainer}>
+      <header>
+        <div className={styles.hero}>
           <h1>The Team With A Dream</h1>
           <p>We are McJAM</p>
         </div>
+      </header>
 
         <div className={styles.homeContainer}>
           <h1>Who are we?</h1>
@@ -31,7 +32,6 @@ export default function Home() {
             <Us i='/img/gameOff.png' a='GameOff' shortDesc='Finally is Game Off 2022 on November 1.' />
           </div>
         </div>
-      </div>
     </Page>
   )
 }
