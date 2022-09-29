@@ -1,13 +1,13 @@
-.mainContainer {
+.footer {
     height: 10vh;
-    background-color: #556665;
+    background-color: var(--foreground);
     text-align: center;
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    font-size: 1.5em;
-    color: #eee
-    ;
+    font-size: 0.8em;
+    color: var(--background);
+
     p {
         margin-top: auto;
         margin-bottom: auto;
