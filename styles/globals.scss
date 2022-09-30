@@ -5,23 +5,28 @@
   --foreground: black;
   --background: white;
 
+  --light: white;
+  --midTone: #455A64;
+  --dark: black;
+
   --accent: #AD1457;
 }
 
 *
 {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
 }
 
 html, body {
   height: 100%;
-  padding: 0;
-  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 @media only screen and (min-width: 700px) {
   body {
-    font-size: 1.5em;
+    font-size: 1.2em;
   }
 }
