@@ -1,0 +1,29 @@
+.page
+{
+    /*Takes into account footer size*/
+    min-height: 90vh;
+
+    header
+    {
+        height: 50vh;
+        text-align: center;
+        z-index: 0;
+        background-color: var(--accent);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h1
+        {
+            font-size: 3em;
+            color: var(--light);
+        }
+
+        p
+        {
+            font-size: 2em;
+            color: var(--light);
+        }
+    }
+}

@@ -1,3 +1,4 @@
+import style from '../styles/component/Page.module.scss';
 import Head from "next/head";
 import { Fragment } from "react";
 
@@ -9,7 +10,7 @@ export default function Page(props) {
     return (
         <Fragment>
             <Head>
-                <link rel="icon" href="/img/logo.jpg" />
+                <link rel="icon" href="/logo/logo_solo.svg" />
                 <title>{ title }</title>
                 <meta property="og:title" content={ props.title ?? props.page }/>
                 <meta property="og:site_name" content="McJAM | mc-jam.github.io" />
@@ -18,7 +19,7 @@ export default function Page(props) {
                 
                 <meta name="viewport" content="width=device-width, initial-scale=1"/>
             </Head>
-            <main>
+            <main className={style.page}>
                 { <Navbar/> }
                 { props.children }
             </main>
