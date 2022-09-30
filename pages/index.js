@@ -1,37 +1,29 @@
-import styles from '../styles/pages/Home.module.scss'
-import Us from '../components/Us'
+import Image from 'next/image';
 import Page from '../components/Page'
-import { Component } from 'react'
+
+import Content from "../components/Content";
+import contentStyles from "../styles/component/Content.module.scss";
+
+import jamJarImage from "../public/logo/logo_solo.svg";
 
 export default function Home() {
   return (
     <Page page="index" title="Home">
       <header>
-        <div className={styles.hero}>
-          <h1>The Team With A Dream</h1>
-          <p>We are McJAM</p>
+        <div className="hero">
+          <h1>Welcome to McJAM</h1>
+          <p>We make games</p>
         </div>
       </header>
-
-        <div className={styles.homeContainer}>
-          <h1>Who are we?</h1>
-
-          <div className={styles.usContainer}>
-            <Us i='/img/justjjsimplified.png' a='JustJJ' shortDesc='The Mc of McJAM, heralding a record of 5 games, JustJJ!'/>
-            <Us i='/img/jay.jpeg' a='Jayy' shortDesc='The J of McJAM, a man who loves 3d modelling, Jayy!'/>
-            <Us i='/img/aaronsongaming.jpg' a='Aaronsongaming' shortDesc='The A of McJAM, coming in with 1000 subscribers on Youtube, Aaronsongaming!'/>
-            <Us i='/img/speedberg.png' a='Speedberg' shortDesc='The M of McJAM, a master of the backend, Speedberg!'/>
-          </div>
-
-          <h1>Our plans</h1>
-          <p>We plan to make 3 games over the course of 3 game jams. We will finish off with our grand finale, Game Off 2022 by Github.</p>
-          <h1>Jams</h1>
-          <div className={styles.jamContainer}>
-            <Us i='/img/coffeeJam.jpg' a='coffeeJam' shortDesc='Starting first is CoffeeJam 2022 on October 1.' />
-            <Us i='/img/mashupJam.png' a='MashupJam' shortDesc='Starting next is MashupJam 2022 on October 14.' />
-            <Us i='/img/gameOff.png' a='GameOff' shortDesc='Finally is Game Off 2022 on November 1.' />
-          </div>
+      <Content>
+        <div className={`${contentStyles.section} ${contentStyles.small}`}>
+          <h2>Our Story</h2>
+          <p>In late summer of 2022, a group of friends decided to team up together to create awesome games for others to play - that group of friends being us!</p>
+          <br/>
+          <a href="/about" className='button accent'>Learn more</a>
         </div>
+        <Image src={jamJarImage} width={128} height={128} />
+      </Content>
     </Page>
   )
 }
