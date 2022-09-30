@@ -1,16 +1,12 @@
 .badge
 {
+    text-emphasis: none;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+
     padding: 5px;
     border-radius: 5px;
-    text-emphasis: none;
-
-    display: flex;
-    justify-content: center;
-
-    *
-    {
-        display: inline-flex;
-    }
 
     span
     {
