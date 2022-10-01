@@ -1,50 +1,42 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/pages/Home.module.scss'
-import Navbar from '../components/Navbar'
-import Us from '../components/Us'
-import Footer from '../components/Footer'
+import Image from 'next/image';
+import Page from '../components/Page'
 
+import Content from "../components/Content";
+import contentStyles from "../styles/component/Content.module.scss";
+
+import jamJarImage from "../public/logo/logo_solo.svg";
+import gamepadImage from "../public/img/gamepad.svg";
+
+//TODO - add black outline to gamepad
 export default function Home() {
   return (
-    <div>
-      <Head>
-        <title>Mc-JAM: Home</title>
-        <meta name="description" content="A new small team of game developers" />
-        <link rel="icon" href="/img/logo.jpg" />
-      </Head>
-
-      <main className={styles.mainContainer}>
-        <Navbar />
-        <div className={styles.otherContainer}>
-
-          <div className={styles.sloganContainer}>
-            <h1>The Team With A Dream</h1>
-            <p>We are Mc-JAM</p>
-          </div>
-
-          <div className={styles.homeContainer}>
-            <h1>Who are we?</h1>
-
-            <div className={styles.usContainer}>
-              <Us i='/img/justjjsimplified.png' a='JustJJ' shortDesc='The Mc of Mc-JAM, heralding a record of 5 games, JustJJ!'/>
-              <Us i='/img/jay.jpeg' a='Jayy' shortDesc='The J of Mc-JAM, a man who loves 3d modelling, Jayy!'/>
-              <Us i='/img/aaronsongaming.jpg' a='Aaronsongaming' shortDesc='The A of Mc-JAM, coming in with 1000 subscribers on Youtube, Aaronsongaming!'/>
-              <Us i='/img/speedberg.png' a='Speedberg' shortDesc='The M of Mc-JAM, a master of the backend, Speedberg!'/>
-            </div>
-
-            <h1>Our plans</h1>
-            <p>We plan to make 3 games over the course of 3 game jams. We will finish off with our grand finale, Game Off 2022 by Github.</p>
-            <h1>Jams</h1>
-            <div className={styles.jamContainer}>
-              <Us i='/img/coffeeJam.jpg' a='coffeeJam' shortDesc='Starting first is CoffeeJam 2022 on October 1.' />
-              <Us i='/img/mashupJam.png' a='MashupJam' shortDesc='Starting next is MashupJam 2022 on October 14.' />
-              <Us i='/img/gameOff.png' a='GameOff' shortDesc='Finally is Game Off 2022 on November 1.' />
-            </div>
-          </div>
+    <Page page="index" title="Home">
+      <header>
+        <div className="hero">
+          <h1>Welcome to McJAM</h1>
+          <p>We make games</p>
         </div>
-        <Footer />
-      </main>
-    </div>
+      </header>
+      <Content>
+        <div className={contentStyles.inline}>
+          <div className={`${contentStyles.section} ${contentStyles.small} ${contentStyles.left}`}>
+            <h2>Our Story</h2>
+            <p>In late summer of 2022, a group of friends decided to team up together to create awesome games for others to play - that group of friends being us!</p>
+            <br/>
+            <a href="/about" className='button accent'>Learn more</a>
+          </div>
+          <Image src={jamJarImage} width={128} height={128} />
+        </div>
+        <div className={contentStyles.inline}>
+          <div className={`${contentStyles.section} ${contentStyles.small} ${contentStyles.left}`}>
+            <h2>We ❤ Games</h2>
+            <p>We are all passionate about playing, making, and sharing games. Our goal is to make games that we can all enjoy, inspiring others in the process.</p>
+            <br/>
+            <a href="/games" className='button accent'>See more</a>
+          </div>
+          <Image src={gamepadImage} width={128} height={128} />
+        </div>
+      </Content>
+    </Page>
   )
 }

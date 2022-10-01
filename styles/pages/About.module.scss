@@ -1,4 +1,21 @@
-.mainContainer {
-    background-image: linear-gradient(#ab171a, #de454b);
-    color: #eee;
+.members
+{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.follow
+{
+    a
+    {
+        border: none;
+    }
+
+    a:hover
+    {
+        filter: brightness(0.85);
+    }
 }

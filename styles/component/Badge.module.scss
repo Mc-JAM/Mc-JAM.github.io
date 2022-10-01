@@ -1,0 +1,16 @@
+.badge
+{
+    text-emphasis: none;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+
+    padding: 5px;
+    border-radius: 5px;
+
+    span
+    {
+        margin-left: 5px;
+        font-size: 1em;
+    }
+}

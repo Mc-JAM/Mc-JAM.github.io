@@ -1,21 +1,18 @@
-import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import style from '../styles/component/Navbar.module.scss'
 
-export default class Navbar extends React.Component{
-    constructor(props) {
-        super(props);
-    }
+import logo from '../public/logo/logo_full_white.svg';
 
-    render() {
-        return (
-            <nav className={style.mainContainer}>
-                <h1><Link href='/'><a>Mc-JAM</a></Link></h1>
-                <ul className={style.mainLinks}>
-                    <li><Link href='/about'><a>About Us</a></Link></li>
-                    <li><Link href='/contacts'><a>Contacts</a></Link></li>
-                </ul>
-            </nav>
-        )
-    }
+export default function Navbar(props) {
+    return (
+        //TODO - navbar with icon in center above copyright
+        <nav className={style.navbar}>
+            <h1><Link href='/'><a><Image src={logo}/></a></Link></h1>
+            <ul>
+                <li><Link href='/games'><a>Games</a></Link></li>
+                <li><Link href='/about'><a>About</a></Link></li>
+            </ul>
+        </nav>
+    )
 }
