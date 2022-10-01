@@ -6,3 +6,16 @@
     align-content: center;
     flex-wrap: wrap;
 }
+
+.follow
+{
+    a
+    {
+        border: none;
+    }
+
+    a:hover
+    {
+        filter: brightness(0.85);
+    }
+}

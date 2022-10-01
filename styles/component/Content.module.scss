@@ -10,12 +10,27 @@
         margin: 10vh 0px;
         padding: 10px;
 
-        &.large
+        &.left
         {
             text-align: left;
         }
 
+        &.right
+        {
+            text-align: right;
+        }
+
         &.small
+        {
+            width: 30%;
+        }
+
+        &.large
+        {
+            width: 70%;
+        }
+
+        &.center
         {
             width: 50%;
             margin-left: auto;
@@ -28,7 +43,22 @@
 
             p
             {
-                text-align: left;
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width: 700px) {
+            text-align: left !important;
+            width: 100% !important;
+
+            h2
+            {
+                text-align: center !important;
+            }
+
+            p
+            {
+                text-align: left !important;
             }
         }
     }
@@ -40,5 +70,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
+
+        @media only screen and (max-width: 700px) {
+            flex-direction: column;
+        }
     }
 }
