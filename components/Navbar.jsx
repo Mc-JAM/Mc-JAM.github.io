@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import style from '../styles/component/Navbar.module.scss'
 
-import logo from '../public/logo/logo_full.svg';
+import logo from '../public/logo/logo_full_white.svg';
 
 export default function Navbar(props) {
     return (
